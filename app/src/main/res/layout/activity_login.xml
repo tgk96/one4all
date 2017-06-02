@@ -106,16 +106,17 @@
 
     <CheckBox
         android:id="@+id/RememberMeCheckBox"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Remember me"
+        android:text="Remember Me"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginButton"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintTop_toBottomOf="@id/LoginButton"
         android:layout_marginTop="8dp"
-        android:onClick="selectItem"
-        />
+        android:ems="10"
+        android:checked="true"
+        android:clickable="true"/>
 
     <TextView
         android:id="@+id/ForgotPasswordTextView"
@@ -129,7 +130,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:textColor="#3968ea"
-        />
+        android:clickable="true" />
 
 
 </android.support.constraint.ConstraintLayout>
