@@ -9,9 +9,9 @@
 
     <TextView
         android:id="@+id/RegisterTextview"
-        android:text="Register here"
+        android:text="@string/text_register_here"
         android:textAlignment="center"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:ems="30"
         android:textStyle="bold"
         app:layout_constraintRight_toRightOf="parent"
@@ -29,7 +29,8 @@
         android:id="@+id/RegisterName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Name(6-32 characters)"
+        android:inputType="textPersonName"
+        android:hint="@string/hint_name"
         android:ems="10"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="16dp"
@@ -44,7 +45,7 @@
         android:id="@+id/RegisterUname"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Username(3-16 characters)"
+        android:hint="@string/hint_uname"
         android:ems="10"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="16dp"
@@ -57,9 +58,10 @@
 
     <EditText
         android:id="@+id/RegisterEmail"
+        android:inputType="textEmailAddress"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Email Address"
+        android:hint="@string/hint_email"
         android:ems="10"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="16dp"
@@ -86,22 +88,22 @@
             android:id="@+id/RegisterFemaleRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Female"
-            android:onClick="onRadioButtonClicked"/>
+            android:text="@string/check_sex_female"
+            android:clickable="true"/>
 
         <RadioButton
             android:id="@+id/RegisterMaleRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Male"
-            android:onClick="onRadioButtonClicked"/>
+            android:text="@string/check_sex_male"
+            android:clickable="true"/>
 
         <RadioButton
             android:id="@+id/RegisterOtherRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Other"
-            android:onClick="onRadioButtonClicked"/>
+            android:text="@string/check_sex_other"
+            android:clickable="true"/>
     </RadioGroup>
 
 
@@ -109,7 +111,7 @@
         android:id="@+id/RegisterAge"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Age"
+        android:hint="@string/hint_age"
         android:ems="10"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="16dp"
@@ -124,7 +126,7 @@
         android:id="@+id/RegisterPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="@string/hint_pass"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -140,7 +142,7 @@
         android:id="@+id/RegisterConfirmPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Confirm Password"
+        android:hint="@string/hint_confirm_pass"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -155,19 +157,20 @@
     <android.support.v7.widget.AppCompatCheckBox
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="I agree to the terms and conditions"
+        android:text="@string/check_agree_to_terms"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/RegistrationButton"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
+        android:layout_marginEnd="16dp"
+        android:clickable="true"/>
 
     <Button
         android:id="@+id/RegistrationButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="@string/registration_button_text"
         app:layout_constraintTop_toBottomOf="@+id/RegisterConfirmPassword"
         android:layout_marginTop="16dp"
         app:layout_constraintLeft_toLeftOf="parent"

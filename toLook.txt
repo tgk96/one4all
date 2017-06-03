@@ -1,1 +1,3 @@
-Elevation
+Use sp for text size
+Use strings.html
+

@@ -1,4 +1,29 @@
 <resources>
     <string name="app_name">One4all</string>
     <string name="title_activity_register">RegisterActivity</string>
+
+    <!--Register Activity-->
+    <string name="check_sex_male">Male</string>
+    <string name="check_sex_female">Female</string>
+    <string name="check_sex_other">Other</string>
+    <string name="text_register_here">Register Here</string>
+    <string name="hint_name">Name(6\-32 characters)</string>
+    <string name="hint_uname">Username(3\-16 characters)</string>
+    <string name="hint_email">Email Address</string>
+    <string name="hint_age">Age</string>
+    <string name="hint_pass">Password</string>
+    <string name="hint_confirm_pass">Confirm Password</string>
+    <string name="registration_button_text">Register</string>
+    <string name="check_agree_to_terms">I agree to the terms and conditions</string>
+
+    <!--Login Activity-->
+    <string name="hint_uname_email">Username/Email Address</string>
+    <string name="button_log_in">Log In</string>
+    <string name="text_sign_in">Sign In</string>
+    <string name="button_register">Register</string>
+    <string name="text_no_account">Don\'t have an account?</string>
+    <string name="check_box_remember_me">Remember Me</string>
+    <string name="text_link_forgot_pass">FORGOT PASSWORD?</string>
+
+
 </resources>
